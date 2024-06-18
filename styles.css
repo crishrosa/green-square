@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+#header-text {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    position: relative;
+    min-height: 100vh; /* Ensures the main area takes the full viewport height */
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+#green-square {
+    width: 75px;
+    height: 75px;
+    background-color: green;
+    position: absolute;
+}
+
+#middle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+}
